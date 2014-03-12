@@ -1,6 +1,32 @@
 ﻿<!DOCTYPE HTML>
 <html>
 	<head>
+		<title>Tutorial 12 March 2014</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
+		<!--[if lte IE 8]><script src="html5shiv.js" type="text/javascript"></script><![endif]-->
+        
+        <script src="js/sk1.js"> </script>
+		<script src="skel.min.js"> </script>
+       
+  
+        </head>
+	<body>
+	
+<!-- Interested in a 12 column grid? There is an unofficial project on Github here: https://github.com/offshoot/Skeleton -->
+
+			<!-- Footer -->
+				
+		</div>
+
+        <script src="js/converter.js"> </script>
+        <script src="js/bridge.js"> </script>
+	</body>
+</html>
+
+<!DOCTYPE HTML>
+<html>
+	<head>
 		<title>skelJS Example</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
@@ -12,49 +38,140 @@
   
         </head>
 	<body>
-	<!-- The container is a centered 960px -->
-<div class="container">
-<!-- Give column value in word form (one, two..., twelve) -->
-<div class="sixteen columns">
-<h1>Full Width Column</h1>
-</div>
-<!-- Sweet nested columns cleared with a clearfix class -->
-<div class="six columns clearfix">
-<!-- In nested columns give the first column a class of alpha
-and the second a class of omega -->
-<div class="three columns alpha">...</div>
-<div class="three columns omega">...</div>
-</div>
- 
-<!-- Sweet nested columns cleared by wrapping a .row -->
-<div class="five columns">
-<div class="row">
-<div class="three columns alpha">...</div>
-<div class="two columns omega">...</div>
-</div>
-</div>
- 
-<!-- Sweet nested columns cleared by <br class="clear"> -->
-<div class="five columns">
-<div class="three columns alpha">...</div>
-<div class="two columns omega">...</div>
-<br class="clear" />
-</div>
- 
-<!-- Can push over by columns -->
-<div class="five columns offset-by-one"></div>
- 
-</div>
- 
-<!-- Note: To clear columns (both nested and just stacked columns right inside the
-.container, you can give the parent a class of "clearfix," wrap each row of columns in a
-"<div class='row'>" or follow the last column in a row with a "<br class='clear'>." They
-all work and it's up to your personal preference. -->
- 
-<!-- Interested in a 12 column grid? There is an unofficial project on Github here: https://github.com/offshoot/Skeleton -->
+		<div class="container">
+			<!-- Header -->
+				<div id="header" class="row">
+					<div class="4u">
+						<h1>Example</h1>
+					</div>
+					<nav id="nav" class="8u">
+						<a href="#">Home</a>
+						<a href="#">About Me</a>
+						<a href="#">Blog</a>
+						<a href="#">Contact</a>
+					</nav>
+				</div>
+			<!-- Hero -->
+				<section id="hero">
+					<h1>Welcome to my converter</h1>
+					
+				</section>
+			<!-- Features -->
+				<div class="row">
+<section class="4u">
+						<h2>Imperial Weight in ounces </h2>
+                        <input id="ounceweight" type="text" />
+						
+					</section>
 
+                    <section class ="4u">
+
+
+						<h2>Imperial Weight in Kilograms </h2>
+                        <input id="kiloweight" type="number" />
+					</section>
+
+
+<section class="4u">
+   
+ <select size="1"  name="select1">
+<option value=""> - Select the Conversion- </option>
+<option value="pk">Pounds to Kilo's</option>
+<option value="kp">Kilo's to Pounds</option>
+<option value="og">Ounces to Grams</option>
+<option value="mk">Miles to Kilometres</option>
+<option value="km">Kilometres to Miles</option>
+
+</select>
+    
+</section>
+					
+					
+    
+                     
+					
+            <section class="4u">        
+  <!-- <div class="8u"></div> -->
+                <h2> Calculate</h2>
+  <div class="4u"><input type = "button" value = "Calculate1" onclick="funct.convertFromItoM('ounceweight', 'kiloweight')"></div>
+
+				
+</section>
+
+         
+			<!-- Features -->
+				<div class="row">
+					<section class="4u">
+						<h2>Miles to Kilometeres </h2>
+                        <input id="miles" type="text" />
+						
+					</section>
+					<section class="4u">
+						<h2>Kilometres to Miles </h2>
+                        <input id="kilometres" type="number" />
+					</section>
+                    <section class="6u">
+						<h2>Answer </h2>
+                        <input id="Number1" type="number" />
+					</section>
+
+                     
+					
+            <section class="4u">        
+  <!-- <div class="8u"></div> -->
+                <h2> Calculate</h2>
+  <div class="4u"><input type = "button" value = "Convert to Miles" onclick="funct.convertFromMToI('kmAns', 'kilometres')"></div>
+
+				
+</section>
+
+			<!-- Main -->
+
+            
+            <div class="8u">8u</div>
+             <div class="4u"><input type = "button" value = "Calculate2" onclick="funct.convertFromItoM('ounceweight', 'kiloweight')"></div>
+ <!-- <div class="4u"><input type = "button" value = "U12 Calculate" onclick="calculate('ans', 'ounceweight', 'kiloweight')"></div> -->
+</div>
+
+
+            <div class="row">
+                <div>
+                    <div class="row">
+					<section class="4u">
+						<h2>Miles to Kilometeres </h2>
+                        <input id="Text1" type="text" />
+						
+					</section>
+					<section class="4u">
+						<h2>Kilometres to  </h2>
+                        <input id="Number2" type="number" />
+					</section>
+					<section class="4u">
+                        <h2 class="kilo">Kilograms to Imperial Weight </h2>
+                        <input id="Number3" type="number" />
+					</section>
+
+                        <section class="4u">
+                        
+                       <div class="4u"><input type = "button" value = "this calculate" onclick="funct.convertFromItoM('ounceweight', 'kiloweight')"></div>
+					</section>
+				</div>
+            
+				<!-- <input type = "button" value = "Calculate" onclick="calculate('ans', 'ounceweight', 'kiloweight')"> -->
+                    
+
+            </section>
+                </div>
+					<!-- Sidebar -->
+						<section class="4u">
+							<h2>Heading</h2>
+							<p>
+							
+							</p>
+						</section>
+				</div>
 			<!-- Footer -->
-				<div id="footer">
+				<div id="Div1">
 					&copy; Example. All rights reserved.
 				</div>
 		</div>
@@ -63,4 +180,3 @@ all work and it's up to your personal preference. -->
         <script src="js/bridge.js"> </script>
 	</body>
 </html>
-
